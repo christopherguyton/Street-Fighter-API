@@ -1,7 +1,8 @@
 'use strict';
 
 var mongoose = require('mongoose'),
-Character = mongoose.model('Characters')
+Character = require('..//models/characterListModels')
+mongoose.model('Characters')
 
 exports.list_all_characters = function (req, res) {
     Character.find({}, function (error, character) {

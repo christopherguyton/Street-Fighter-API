@@ -8,7 +8,6 @@ var characterSchema = new Schema({
     bloodType: String,
     firstAppearance: String,
     fightingStyle: String,
-
-})
+});
 
 module.exports = mongoose.model('Characters', characterSchema);
